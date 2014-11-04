@@ -1,0 +1,87 @@
+body, html {
+  padding: 0px;
+  margin: 0px;
+  height:100%;
+}
+
+#map {
+	width:50%;
+ 	height: 100%;
+	float:left;
+}
+
+#sideBar {
+	width:50%;
+	height:100vh;
+	float:right;
+	background:steelblue;
+	color: white;
+	font-family:sans-serif;
+	padding:20px;
+	box-sizing: border-box;
+}
+
+#first {
+	width:32%;
+	float:left;
+	margin-right:5px;
+}
+
+#second {
+	width:32%;
+	float:left;
+	margin-right:5px;
+}
+
+#third {
+	width:32%;
+	float:left;
+}
+
+h1 {
+	font-size:26px;
+	margin-top:0;
+	margin-bottom:5px;
+}
+
+
+/* Park Divs*/
+.mile {
+	background:#C8C8C8;
+	padding:5px;
+	border-radius:5px;
+	margin-bottom:5px;
+
+}
+
+.mile.hover {
+	background:#404040;
+}
+
+.mileTitle {
+	font-size:14px;
+	font-weight:bold;
+	margin-bottom:3px;
+}
+
+.mileInfo {
+	font-size:12px;
+	padding-left:5px;
+}
+
+.mileTime {
+	font-size:14px;
+	color:#C8C8C8;
+	font-weight:bold;
+	padding-left:5px;
+	font-family:monospace;
+}
+
+
+/* Upper right button*/
+.menu {
+	font-size:20px;
+	position:absolute;
+	right:22px;
+	text-decoration:underline;
+}

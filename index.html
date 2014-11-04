@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Marathon Watcher</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+
+</head>
+<body>
+	<div id="map"></div>
+	<div id="sideBar">
+		<h1>When will the marathon leaders arrive?</h1>
+		<div id="first">
+			<div class="mile mileZero">
+				<div class="mileTitle">Start</div>
+				<div class="mileInfo">Staten Island | Verazzano Bridge</div>
+				<div class="mileTime">9:42 AM</div>
+			</div>
+			<div class="mile mileOne">
+				<div class="mileTitle">Mile 1</div>
+				<div class="mileInfo">Staten Island | Verazzano Bridge</div>
+				<div class="mileTime">9:47 AM</div>
+			</div>
+			<div class="mile mileTwo">
+				<div class="mileTitle">Mile 2</div>
+				<div class="mileInfo">Brooklyn | Gowanus Expressway</div>
+				<div class="mileTime">9:52 AM</div>
+			</div>
+			<div class="mile mileThree">
+				<div class="mileTitle">Mile 3</div>
+				<div class="mileInfo">Brooklyn | 4th Ave</div>
+				<div class="mileTime">9:57 AM</div>
+			</div>
+			<div class="mile mileFour">
+				<div class="mileTitle">Mile 4</div>
+				<div class="mileInfo">Brooklyn | 4th Ave</div>
+				<div class="mileTime">10:02 AM</div>
+			</div>
+			<div class="mile mileFive">
+				<div class="mileTitle">Mile 5</div>
+				<div class="mileInfo">Brooklyn | 4th Ave</div>
+				<div class="mileTime">10:07 AM</div>
+			</div>
+			<div class="mile mileSix">
+				<div class="mileTitle">Mile 6</div>
+				<div class="mileInfo">Brooklyn | 4th Ave</div>
+				<div class="mileTime">10:12 AM</div>
+			</div>
+			<div class="mile mileSeven">
+				<div class="mileTitle">Mile 7</div>
+				<div class="mileInfo">Brooklyn | 4th Ave</div>
+				<div class="mileTime">10:17 AM</div>
+			</div>
+			<div class="mile mileEight">
+				<div class="mileTitle">Mile 8</div>
+				<div class="mileInfo">Brooklyn | Lafayette Ave</div>
+				<div class="mileTime">10:22 AM</div>
+			</div>
+		</div>
+		
+		<div id="second">
+			<div class="mile mileNine">
+				<div class="mileTitle">Mile 9</div>
+				<div class="mileInfo">Brooklyn | Lafayette Ave</div>
+				<div class="mileTime">10:28 AM</div>
+			</div>
+			<div class="mile mileOneZero">
+				<div class="mileTitle">Mile 10</div>
+				<div class="mileInfo">Brooklyn | Bedford Ave</div>
+				<div class="mileTime">10:33 AM</div>
+			</div>
+			<div class="mile mileOneOne">
+				<div class="mileTitle">Mile 11</div>
+				<div class="mileInfo">Brooklyn | Bedford Ave</div>
+				<div class="mileTime">10:38 AM</div>
+			</div>
+			<div class="mile mileOneTwo">
+				<div class="mileTitle">Mile 12</div>
+				<div class="mileInfo">Brooklyn | Manhattan Ave</div>
+				<div class="mileTime">10:43 AM</div>
+			</div>
+			<div class="mile mileOneThree">
+				<div class="mileTitle">Mile 13</div>
+				<div class="mileInfo">Brooklyn | McGuinness Blvd</div>
+				<div class="mileTime">10:48 AM</div>
+			</div>
+			<div class="mile mileOneFour">
+				<div class="mileTitle">Mile 14</div>
+				<div class="mileInfo">Queens | 44th Dr</div>
+				<div class="mileTime">10:53 AM</div>
+			</div>
+			<div class="mile mileOneFive">
+				<div class="mileTitle">Mile 15</div>
+				<div class="mileInfo">Queens | Queensboro Br</div>
+				<div class="mileTime">10:58 AM</div>
+			</div>
+			<div class="mile mileOneSix">
+				<div class="mileTitle">Mile 16</div>
+				<div class="mileInfo">Manhattan | Queensboro Br</div>
+				<div class="mileTime">11:04 AM</div>
+			</div>
+			<div class="mile mileOneSeven">
+				<div class="mileTitle">Mile 17</div>
+				<div class="mileInfo">Manhattan | 1st Ave</div>
+				<div class="mileTime">11:09 AM</div>
+			</div>
+		</div>
+
+		<div id="third">
+			<div class="mile mileOneEight">
+				<div class="mileTitle">Mile 18</div>
+				<div class="mileInfo">Manhattan | 1st Ave</div>
+				<div class="mileTime">11:14 AM</div>
+			</div>
+			<div class="mile mileOneNine">
+				<div class="mileTitle">Mile 19</div>
+				<div class="mileInfo">Manhattan | 1st Ave</div>
+				<div class="mileTime">11:19 AM</div>
+			</div>
+			<div class="mile mileTwoZero">
+				<div class="mileTitle">Mile 20</div>
+				<div class="mileInfo">Bronx | 138th St</div>
+				<div class="mileTime">11:23 AM</div>
+			</div>
+			<div class="mile mileTwoOne">
+				<div class="mileTitle">Mile 21</div>
+				<div class="mileInfo">Manhattan | 138th St</div>
+				<div class="mileTime">11:28 AM</div>
+			</div>
+			<div class="mile mileTwoTwo">
+				<div class="mileTitle">Mile 22</div>
+				<div class="mileInfo">Manhattan | Mt Morris Pk W</div>
+				<div class="mileTime">11:33 AM</div>
+			</div>
+			<div class="mile mileTwoThree">
+				<div class="mileTitle">Mile 23</div>
+				<div class="mileInfo">Manhattan | 5th Ave</div>
+				<div class="mileTime">11:38 AM</div>
+			</div>
+			<div class="mile mileTwoFour">
+				<div class="mileTitle">Mile 24</div>
+				<div class="mileInfo">Manhattan | Central Park</div>
+				<div class="mileTime">11:43 AM</div>
+			</div>
+			<div class="mile mileTwoFive">
+				<div class="mileTitle">Mile 25</div>
+				<div class="mileInfo">Manhattan | Central Park</div>
+				<div class="mileTime">11:47 AM</div>
+			</div>
+			<div class="mile mileTwoSix">
+				<div class="mileTitle">Mile 26</div>
+				<div class="mileInfo">Manhattan | Central Park</div>
+				<div class="mileTime">11:53 AM</div>
+			</div>
+		</div>
+
+	</div>
+ 
+  <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="js/script.js"></script> 
+</body>
+</html>
