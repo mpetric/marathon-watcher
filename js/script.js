@@ -300,13 +300,11 @@ marathonRoute.addTo(map);
 
 //listeners for sidebar mouseover effects
 
-$('.mile').on('mouseover',function(){
-	$(this).css('background','#404040');
-});
-
-
-$('.mile').on('mouseout',function(){
-	$(this).css('background','#C8C8C8');
+//listener for box hover
+$('.mile').hover(function(){
+    $(this).toggleClass('hover');
+},function(){
+    $(this).toggleClass('hover');
 });
 
 /*
